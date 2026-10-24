@@ -140,18 +140,7 @@ namespace WindowsFormsApp2
                 lstEmployees.Items.Add($"{emp.Code} - {emp.FirstName} {emp.LastName} ({emp.Age} yaş)");
             }
         }
-        private void tabPageisci_Click(object sender, EventArgs e)
-        {
-        }
 
-        private void txtkod_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void btnSearchStat_Click_1(object sender, EventArgs e)
-        {
-            btnSearchStat_Click(sender, e);
-        }
 
     }
 }

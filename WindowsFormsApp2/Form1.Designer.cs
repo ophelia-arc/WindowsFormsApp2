@@ -91,7 +91,7 @@
             this.tabPageisci.TabIndex = 0;
             this.tabPageisci.Text = "İşçi əlavə et";
             this.tabPageisci.UseVisualStyleBackColor = true;
-            this.tabPageisci.Click += new System.EventHandler(this.tabPageisci_Click);
+       
             // 
             // lstEmployees
             // 
@@ -139,7 +139,7 @@
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(308, 20);
             this.txtCode.TabIndex = 4;
-            this.txtCode.TextChanged += new System.EventHandler(this.txtkod_TextChanged);
+    
             // 
             // lblyas
             // 
@@ -291,7 +291,7 @@
             this.btnSearchStat.TabIndex = 2;
             this.btnSearchStat.Text = "Axtar";
             this.btnSearchStat.UseVisualStyleBackColor = true;
-            this.btnSearchStat.Click += new System.EventHandler(this.btnSearchStat_Click_1);
+            this.btnSearchStat.Click += new System.EventHandler(this.btnSearchStat_Click);
             // 
             // txtStatCode
             // 
