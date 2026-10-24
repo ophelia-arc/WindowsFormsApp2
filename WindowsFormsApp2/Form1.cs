@@ -153,9 +153,5 @@ namespace WindowsFormsApp2
             btnSearchStat_Click(sender, e);
         }
 
-        private void btnExit_Click_1(object sender, EventArgs e)
-        {
-            btnExit_Click(sender, e);
-        }
     }
 }
