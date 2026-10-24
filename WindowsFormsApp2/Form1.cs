@@ -12,8 +12,6 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-
-        // 1. İŞÇİ ƏLAVƏ ET DÜYMƏSİ
         private void btnAddEmployee_Click(object sender, EventArgs e)
         {
             string code = txtCode.Text.Trim();
@@ -46,8 +44,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show("Eyni kodla işçi artıq mövcuddur və ya məlumatlar düzgün deyil!", "Xəta", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        // 2. ÖDƏNİŞ YAZ DÜYMƏSİ
         private void btnAddPayment_Click(object sender, EventArgs e)
         {
             string employeeCode = txtPayCode.Text.Trim();
@@ -78,8 +74,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show("İşçi tapılmadı və ya daxil edilən məlumatlar yanlışdır!", "Xəta", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        // 3. STATİSTİKA AXTAR DÜYMƏSİ
         private void btnSearchStat_Click(object sender, EventArgs e)
         {
             string code = txtStatCode.Text.Trim();
@@ -120,7 +114,6 @@ namespace WindowsFormsApp2
             }
         }
 
-        // 4. ÇIXIŞ DÜYMƏSİ
         private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Proqramdan çıxmaq istədiyinizdən əminsiniz?", "Çıxış Təsdiqi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -131,7 +124,6 @@ namespace WindowsFormsApp2
             }
         }
 
-        // KÖMƏKÇİ METODLAR
         private void ClearEmployeeInputFields()
         {
             txtCode.Clear();
@@ -148,8 +140,6 @@ namespace WindowsFormsApp2
                 lstEmployees.Items.Add($"{emp.Code} - {emp.FirstName} {emp.LastName} ({emp.Age} yaş)");
             }
         }
-
-        // DİZAYNER XƏTALARINI ARADAN QALDIRMAQ ÜÇÜN
         private void tabPageisci_Click(object sender, EventArgs e)
         {
         }
